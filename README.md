@@ -1,5 +1,3 @@
-Peço desculpas pelo meu engano. Agradeço por fornecer a lista exata de arquivos do repositório. Com base nessa informação, aqui está o README corrigido e mais preciso.
-
 # Projeto TS
 
 **Autor:** Matheus Pereira
