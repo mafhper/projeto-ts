@@ -40,11 +40,10 @@ Para começar, você precisará ter o **Node.js** e o **npm** (Node Package Mana
 
 Os arquivos principais deste projeto estão em TypeScript, organizados para demonstrar uma boa prática de desenvolvimento.
 
-  * `calculadora.ts` e `calculadora.js`: O arquivo TypeScript `calculadora.ts` contém a lógica de uma calculadora, enquanto `calculadora.js` é a versão compilada em JavaScript.
+  * `index.ts` e `index.js`: O arquivo `index.ts` é o exemplo inicial de demonstração, e sua versão compilada em JavaScript é o `index.js`.
   * `dados.ts` e `dados.js`: O arquivo TypeScript `dados.ts` lida com a manipulação ou processamento de dados, e `dados.js` é a sua versão compilada em JavaScript.
-  * `index.ts` e `index.js`: O arquivo `index.ts` é o ponto de entrada principal da aplicação, que provavelmente importa as funcionalidades dos arquivos `calculadora.ts` e `dados.ts`. `index.js` é o resultado da compilação do `index.ts`.
-  * `package.json` e `package-lock.json`: Arquivos padrão do Node.js para gerenciar as dependências do projeto. O `package.json` também define os scripts para as tarefas de compilação e execução.
-  * `tsconfig.json`: O arquivo de configuração do TypeScript. Ele define as opções para o compilador (`tsc`), incluindo o diretório de saída para os arquivos compilados.
+  * `calculadora.ts` e `calculadora.js`: O arquivo TypeScript `calculadora.ts` contém a lógica de uma calculadora, enquanto `calculadora.js` é a versão compilada em JavaScript.
+
 
 -----
 
@@ -57,7 +56,7 @@ Para compilar e executar o projeto, você pode usar o compilador **TypeScript (t
 Para compilar os arquivos TypeScript (`.ts`) para JavaScript (`.js`), use o comando `tsc`. O compilador usará as configurações do `tsconfig.json` para processar todos os arquivos `.ts` e gerar os correspondentes `.js` no diretório de saída.
 
 ```bash
-tsc
+tsc nome_do_arquivo.ts
 ```
 
 ### Executar o Projeto
@@ -65,5 +64,5 @@ tsc
 Após a compilação, para executar o código JavaScript gerado, use o comando abaixo. Ele rodará o arquivo principal `index.js`.
 
 ```bash
-npm run start
+node nome_do_arquivo.js
 ```
