@@ -1,48 +1,68 @@
+Peço desculpas pelo meu engano. Agradeço por fornecer a lista exata de arquivos do repositório. Com base nessa informação, aqui está o README corrigido e mais preciso.
+
 # Projeto TS
 
 **Autor:** Matheus Pereira
 
+-----
+
 ## Descrição
 
-Este projeto de demonstração tem como objetivo apresentar uma estrutura básica e um exemplo de como configurar e trabalhar com um ambiente de desenvolvimento TypeScript. Ele inclui alguns arquivos de exemplo que ilustram o uso de tipos e classes, permitindo que você explore a tipagem estática e outros recursos do TypeScript.
+Este projeto de demonstração tem como objetivo principal mostrar a transição e a co-existência de arquivos JavaScript e TypeScript em um mesmo ambiente. Ele serve como um exemplo prático para entender a organização de um projeto com arquivos `.ts` e sua compilação para o formato `.js`. A estrutura do projeto é simples, contendo módulos separados para funcionalidades específicas como cálculo e manipulação de dados.
+
+-----
 
 ## Como Instalar
 
-Para começar, você precisará ter o Node.js e o npm (Node Package Manager) instalados na sua máquina. Siga os passos abaixo para clonar o projeto e instalar as dependências.
+Para começar, você precisará ter o **Node.js** e o **npm** (Node Package Manager) instalados na sua máquina. Siga os passos abaixo para clonar o repositório e instalar as dependências.
 
-1.  Clone o repositório para a sua máquina:
+1.  **Clone o repositório:**
 
     ```bash
     git clone https://github.com/mafhper/projeto-ts.git
     ```
 
-2.  Navegue até o diretório do projeto:
+2.  **Navegue até o diretório do projeto:**
 
     ```bash
     cd projeto-ts
     ```
 
-3.  Instale as dependências necessárias:
+3.  **Instale as dependências:**
 
     ```bash
     npm install
     ```
 
+-----
+
+## Estrutura do Projeto e Descrição dos Arquivos
+
+Os arquivos principais deste projeto estão em TypeScript, organizados para demonstrar uma boa prática de desenvolvimento.
+
+  * `calculadora.ts` e `calculadora.js`: O arquivo TypeScript `calculadora.ts` contém a lógica de uma calculadora, enquanto `calculadora.js` é a versão compilada em JavaScript.
+  * `dados.ts` e `dados.js`: O arquivo TypeScript `dados.ts` lida com a manipulação ou processamento de dados, e `dados.js` é a sua versão compilada em JavaScript.
+  * `index.ts` e `index.js`: O arquivo `index.ts` é o ponto de entrada principal da aplicação, que provavelmente importa as funcionalidades dos arquivos `calculadora.ts` e `dados.ts`. `index.js` é o resultado da compilação do `index.ts`.
+  * `package.json` e `package-lock.json`: Arquivos padrão do Node.js para gerenciar as dependências do projeto. O `package.json` também define os scripts para as tarefas de compilação e execução.
+  * `tsconfig.json`: O arquivo de configuração do TypeScript. Ele define as opções para o compilador (`tsc`), incluindo o diretório de saída para os arquivos compilados.
+
+-----
+
 ## Como Rodar
 
-Este projeto usa scripts do npm para simplificar a compilação e execução.
+Para compilar e executar o projeto, você pode usar o compilador **TypeScript (tsc)** diretamente.
 
 ### Compilar o Código
 
-Para compilar os arquivos TypeScript (`.ts`) para JavaScript (`.js`), use o seguinte comando. Isso gerará os arquivos `.js` na pasta de saída configurada.
+Para compilar os arquivos TypeScript (`.ts`) para JavaScript (`.js`), use o comando `tsc`. O compilador usará as configurações do `tsconfig.json` para processar todos os arquivos `.ts` e gerar os correspondentes `.js` no diretório de saída.
 
 ```bash
-npm run build
+tsc
 ```
 
 ### Executar o Projeto
 
-Para executar o projeto após a compilação, use o comando abaixo. Ele rodará o arquivo JavaScript de entrada (`index.js`).
+Após a compilação, para executar o código JavaScript gerado, use o comando abaixo. Ele rodará o arquivo principal `index.js`.
 
 ```bash
 npm run start
