@@ -6,7 +6,7 @@
 
 ## Descrição
 
-Este projeto de demonstração tem como objetivo principal mostrar a transição e a co-existência de arquivos JavaScript e TypeScript em um mesmo ambiente. Ele serve como um exemplo prático para entender a organização de um projeto com arquivos `.ts` e sua compilação para o formato `.js`. A estrutura do projeto é simples, contendo módulos separados para funcionalidades específicas como cálculo e manipulação de dados.
+Esse projeto serve como um exemplo prático para entender a organização de um projeto com arquivos `.ts` e sua compilação para o formato `.js`. A estrutura do projeto é simples, contendo módulos separados para funcionalidades específicas como cálculo e manipulação de dados.
 
 -----
 
